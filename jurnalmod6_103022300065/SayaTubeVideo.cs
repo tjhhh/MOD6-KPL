@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,13 +19,26 @@ namespace jurnalmod6_103022300065
         }
         public SayaTubeVideo(String title)
         {
+            Contract.Requires(title != null);
+            Contract.Requires(title.Length <= 200);
             this.title = title;
             this.id = new Random().Next(10000, 99999);
             this.playCount = 0;
         }
-        public void IncreasePlayCount()
+        public void IncreasePlayCount(int count)
         {
-            this.playCount++;
+            Contract.Requires(count <= 25000000);
+            try
+            {
+                checked
+                {
+                    this.playCount += count;
+                }
+            }
+            catch (OverflowException ex)
+            {
+                Console.WriteLine("Error : {0} ", ex.Message);
+            }
         }
         public void PrintVideoDetails()
         {

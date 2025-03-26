@@ -22,28 +22,28 @@ class program
         SayaTubeVideo v10 = new SayaTubeVideo("Interstellar");
 
         Random rand = new Random();
-        v1.IncreasePlayCount();
-        v2.IncreasePlayCount();
-        v3.IncreasePlayCount();
-        v4.IncreasePlayCount();
-        v5.IncreasePlayCount();
-        v6.IncreasePlayCount();
-        v7.IncreasePlayCount();
-        v8.IncreasePlayCount();
-        v9.IncreasePlayCount();
-        v10.IncreasePlayCount();
-        v10.IncreasePlayCount();
-        v1.IncreasePlayCount();
-        //v1.IncreasePlayCount(rand.Next(10000, 99999));
-        //v2.IncreasePlayCount(rand.Next(10000, 99999));
-        //v3.IncreasePlayCount(rand.Next(10000, 99999));
-        //v4.IncreasePlayCount(rand.Next(10000, 99999));
-        //v5.IncreasePlayCount(rand.Next(10000, 99999));
-        //v6.IncreasePlayCount(rand.Next(10000, 99999));
-        //v7.IncreasePlayCount(rand.Next(10000, 99999));
-        //v8.IncreasePlayCount(rand.Next(10000, 99999));
-        //v9.IncreasePlayCount(rand.Next(10000, 99999));
-        //v10.IncreasePlayCount(rand.Next(10000, 99999));
+        //v1.IncreasePlayCount();
+        //v2.IncreasePlayCount();
+        //v3.IncreasePlayCount();
+        //v4.IncreasePlayCount();
+        //v5.IncreasePlayCount();
+        //v6.IncreasePlayCount();
+        //v7.IncreasePlayCount();
+        //v8.IncreasePlayCount();
+        //v9.IncreasePlayCount();
+        //v10.IncreasePlayCount();
+        //v10.IncreasePlayCount();
+        //v1.IncreasePlayCount();
+        v1.IncreasePlayCount(rand.Next(10000, 99999));
+        v2.IncreasePlayCount(rand.Next(10000, 99999));
+        v3.IncreasePlayCount(rand.Next(10000, 99999));
+        v4.IncreasePlayCount(rand.Next(10000, 99999));
+        v5.IncreasePlayCount(rand.Next(10000, 99999));
+        v6.IncreasePlayCount(rand.Next(10000, 99999));
+        v7.IncreasePlayCount(rand.Next(10000, 99999));
+        v8.IncreasePlayCount(rand.Next(10000, 99999));
+        v9.IncreasePlayCount(rand.Next(10000, 99999));
+        v10.IncreasePlayCount(rand.Next(10000, 99999));
 
         user1.AddVideo(v1);
         user1.AddVideo(v2);
@@ -58,26 +58,37 @@ class program
 
         Console.WriteLine("Review Film " + v1.Gettitle() + "oleh ojan");
         v1.PrintVideoDetails();
+        Console.WriteLine(" ");
         Console.WriteLine("Review Film " + v2.Gettitle() + "oleh ojan");
         v2.PrintVideoDetails();
+        Console.WriteLine(" ");
         Console.WriteLine("Review Film " + v3.Gettitle() + "oleh ojan");
         v3.PrintVideoDetails();
+        Console.WriteLine(" ");
         Console.WriteLine("Review Film " + v4.Gettitle() + "oleh ojan");
         v4.PrintVideoDetails();
+        Console.WriteLine(" ");
         Console.WriteLine("Review Film " + v5.Gettitle() + "oleh ojan");
         v5.PrintVideoDetails();
+        Console.WriteLine(" ");
         Console.WriteLine("Review Film " + v6.Gettitle() + "oleh ojan");
         v6.PrintVideoDetails();
+        Console.WriteLine(" ");
         Console.WriteLine("Review Film " + v7.Gettitle() + "oleh ojan");
         v7.PrintVideoDetails();
+        Console.WriteLine(" ");
         Console.WriteLine("Review Film " + v8.Gettitle() + "oleh ojan");
         v8.PrintVideoDetails();
+        Console.WriteLine(" ");
         Console.WriteLine("Review Film " + v9.Gettitle() + "oleh ojan");
         v9.PrintVideoDetails();
+        Console.WriteLine(" ");
         Console.WriteLine("Review Film " + v10.Gettitle() + "oleh ojan");
         v10.PrintVideoDetails();
+        Console.WriteLine(" ");
 
-
+        Console.WriteLine(" ");
+        user1.PrintAllVIdoecount();
 
     }
 }
